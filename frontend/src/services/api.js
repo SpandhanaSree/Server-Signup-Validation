@@ -1,8 +1,7 @@
-
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://server-validated-signup-api.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
