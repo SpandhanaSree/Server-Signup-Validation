@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0a1238, #361458);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+}
+
+#root > div {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+h1 {
+  text-align: center;
+  color: #29254b;
+  margin-bottom: 28px;
+}
+
+form > div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  color: #333;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5d5e0;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #7654c8;
+  box-shadow: 0 0 0 3px rgba(118, 84, 200, 0.12);
+}
+
+form p {
+  color: #dc3545;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg,  #0a1238, #361458);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+form p:last-child {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #root > div {
+    padding: 25px 20px;
+  }
+}
+input::placeholder {
+  color: #555;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+input {
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: #222;
+}
+
+input:focus::placeholder {
+  color: #bbb;
+}
+
+form p.success-message {
+  color: #100087;
+  background-color: #8783a0;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
